@@ -22,7 +22,9 @@ UnityDecoration.top {
     border-bottom-width: 0;
     border-radius: 8px 8px 0 0;
     padding: 1px 8px 0 8px;
-    background-color: @titlebar_bg_color;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade(@toolbar_bg_color, 1.2)),
+                                     to (@toolbar_bg_color));
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.1);
     text-shadow: none;
 }
@@ -51,8 +53,10 @@ UnityPanelWidget,
     border-width: 0 0 0px 0;
     border-style: solid;
     border-color: @panel_bg_color;
-    background-color: @panel_bg_color;
-    background-image: none;
+    background-color: red;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade(@toolbar_bg_color, 1.2)),
+                                     to (@toolbar_bg_color));
     color: @panel_fg_color;
 }
 

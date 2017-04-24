@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -43,9 +43,9 @@
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
-     inkscape:zoom="19.666667"
-     inkscape:cx="13.224165"
-     inkscape:cy="5.5787659"
+     inkscape:zoom="32.734951"
+     inkscape:cx="5.6296527"
+     inkscape:cy="7.9246207"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -56,6 +56,18 @@
   </sodipodi:namedview>
   <defs
      id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4141">
+      <stop
+         style="stop-color:#ec644b;stop-opacity:1;"
+         offset="0"
+         id="stop4143" />
+      <stop
+         style="stop-color:#f08470;stop-opacity:1"
+         offset="1"
+         id="stop4145" />
+    </linearGradient>
     <path
        d="M 0,0 24,0 24,24 0,24 Z"
        id="a"
@@ -79,6 +91,15 @@
          xlink:href="#a"
          id="use8-3" />
     </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4141"
+       id="linearGradient4147"
+       x1="10.875"
+       y1="3"
+       x2="10.875"
+       y2="21"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <clipPath
      id="b">
@@ -98,5 +119,5 @@
      id="path10"
      inkscape:connector-curvature="0"
      transform="matrix(0.88888889,0,0,0.88888889,-2.6666667,-2.6666667)"
-     style="fill:#26a69a;fill-opacity:1" />
+     style="fill:url(#linearGradient4147);fill-opacity:1" />
 </svg>

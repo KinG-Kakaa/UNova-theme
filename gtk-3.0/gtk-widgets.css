@@ -254,7 +254,7 @@ GtkAssistant .sidebar {
     -GtkWidget-focus-line-width: 0;
     padding: 4px;
     border-width: 0px;
-    border-radius: 2px;
+    border-radius: 4px;
     border-style: solid;
     border-color: transparent;
     background-color: shade(@theme_bg_color, 1.8);
@@ -497,9 +497,17 @@ GtkHTML {
 * calendar *
 ************/
 GtkCalendar {
-    padding: 4px;
+    border-radius: 4px;
     outline-offset: -1px;
 }
+
+GtkCalendar:selected {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                 from (@theme_selected_bg_color),
+                                 to (shade(@theme_selected_bg_color, 1.2)));
+}
+
+
 
 GtkCalendar:inconsistent {
     color: mix(@theme_fg_color, @theme_bg_color, 0.5);
@@ -637,7 +645,7 @@ GtkExpander {
 }
 
 .list-row:selected {
-    background-image: none;
+    background-image: none;/*Boja sa strane*/
     background-color: transparent;
     color: @selected_bg_color;
 }
@@ -2157,7 +2165,10 @@ GtkColorButton.button {
     border-style: solid;
     border-color: transparent;
     background-color: @titlebar_bg_color;
-    background-image: none;
+    /*Obrisi ako ti se ne svidja*/
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (@dark_bg_color),
+                                     to (shade(@dark_bg_color, 1.2)));
     color: @titlebar_fg_color;
 }
 
@@ -2184,20 +2195,27 @@ GtkColorButton.button {
     border-color: shade(@titlebar_bg_color, 0.8);
     background-color: shade(@titlebar_bg_color, 1.0);
     background-image: none;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (@titlebar_bg_color),
+                                     to (shade(@titlebar_bg_color, 1.2)));
+
     color: @titlebar_fg_color;
 }
 
 .header-bar .button:hover {
     border-color: shade(@titlebar_bg_color, 0.7);
-    background-color: shade(@titlebar_bg_color, 1.10);
+    background-color: shade(@titlebar_bg_color, 0.8);
     background-image: none;
 }
 
 .header-bar .button:active,
 .header-bar .button:checked {
     border-color: shade(@titlebar_bg_color, 0.8);
-    background-color: shade(@titlebar_bg_color, 0.90);
-    background-image: none;
+    background-color: shade(@titlebar_bg_color, 1.40);
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade(@titlebar_bg_color, 1.4)),
+                                     to (shade(@titlebar_bg_color, 1.2)));
+
 }
 
 .header-bar .button:active:hover,
@@ -2347,7 +2365,9 @@ GtkColorButton.button {
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.8);
     background-color: @toolbar_bg_color;
-    background-image: none;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (@toolbar_bg_color),
+                                     to (shade(@toolbar_bg_color, 1.2)));
     color: @toolbar_fg_color;
 }
 
@@ -3242,11 +3262,22 @@ GtkViewport.frame {
     color: mix(@theme_fg_color, @theme_bg_color, 0.5);
 }
 
-.view:selected,
-.view:selected:focus {
-    background-color: shade(@theme_selected_fg_color, 0.9);
-    color: @theme_selected_bg_color;
+.view:selected {
+    border-radius: 0px;
+    background-color: shade(@theme_selected_fg_color, 0.9);/*Color icon*/
+    color: @selected_bg_color; /*color text*/
+
 }
+
+.view:selected:focus {
+    border-radius: 0px;
+    background-color: shade(green, 0.9);/*Color icon*/
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (@selected_bg_color),
+                                     to (shade(@selected_bg_color, 1.2)));
+    color: @dark_fg_color; /*color text*/
+}
+
 
 /**************
  * action-bar *
@@ -3259,6 +3290,7 @@ GtkViewport.frame {
     background-color: @theme_bg_color;
     background-image: none;
     color: @theme_fg_color;
+
 }
 
 .action-bar .button.text-button {

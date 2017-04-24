@@ -18,6 +18,18 @@
    sodipodi:docname="checkbox-checked.svg">
   <defs
      id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4141">
+      <stop
+         style="stop-color:#ec644b;stop-opacity:1;"
+         offset="0"
+         id="stop4143" />
+      <stop
+         style="stop-color:#f08470;stop-opacity:1"
+         offset="1"
+         id="stop4145" />
+    </linearGradient>
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3802"
@@ -55,6 +67,15 @@
        id="radialGradient3006"
        xlink:href="#linearGradient3802"
        inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4141"
+       id="linearGradient4147"
+       x1="8"
+       y1="1036.3622"
+       x2="8"
+       y2="1052.3622"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -63,9 +84,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="15.839192"
-     inkscape:cx="4.7569592"
-     inkscape:cy="7.945688"
+     inkscape:zoom="26.364161"
+     inkscape:cx="9.2343777"
+     inkscape:cy="6.761347"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -105,6 +126,6 @@
        inkscape:connector-curvature="0"
        d="m 14.222222,1036.3622 -12.4444442,0 C 0.79111111,1036.3622 0,1037.1622 0,1038.14 l 0,12.4444 c 0,0.9778 0.79111111,1.7778 1.7777778,1.7778 l 12.4444442,0 c 0.986667,0 1.777778,-0.8 1.777778,-1.7778 l 0,-12.4444 c 0,-0.9778 -0.791111,-1.7778 -1.777778,-1.7778 z m -7.9999998,12.4444 -4.4444444,-4.4444 1.2533333,-1.2533 3.1911111,3.1822 6.7466668,-6.7467 1.253333,1.2622 -7.9999998,8 z"
        id="path6"
-       style="fill:#26a69a;fill-opacity:1" />
+       style="fill:url(#linearGradient4147);fill-opacity:1" />
   </g>
 </svg>
