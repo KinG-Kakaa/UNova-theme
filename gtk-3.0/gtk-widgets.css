@@ -498,6 +498,7 @@ GtkHTML {
 ************/
 GtkCalendar {
     border-radius: 4px;
+    padding: 0 2px;
     outline-offset: -1px;
 }
 
