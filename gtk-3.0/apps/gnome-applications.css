@@ -106,6 +106,8 @@ NautilusWindow .toolbar {
     border-color: shade(@toolbar_bg_color, 0.8);
 }
 
+
+
 NautilusWindow .sidebar .frame {
     border-style: none;
 }
@@ -189,6 +191,16 @@ NautilusQueryEditor .toolbar .button:checked {
 NautilusWindow .sidebar-icon {
     padding: 0 10px;
 }
+
+NautilusWindow .button {
+    padding: 2px 0;
+}
+
+NautilusWindow .entry {
+    padding: 6px;
+    border-radius: 4px;
+}
+
 
 NautilusWindow > GtkTable .pane-separator {
     background-color: transparent;

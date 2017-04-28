@@ -16,7 +16,8 @@ background-image: -gtk-gradient (linear, left top, left bottom,
 @define-color selected_fg_color #fff;
 @define-color tooltip_bg_color #424242;
 @define-color tooltip_fg_color #eeeeee;
-
+@define-color disabled shade(@bg_color, 0.9);
+@define-color disabled_text shade(@bg_color, 0.6);
 /* dark color scheme */
 @define-color dark_bg_color #2e2f29;
 @define-color dark_fg_color #fff;
@@ -40,14 +41,14 @@ background-image: -gtk-gradient (linear, left top, left bottom,
 @define-color info_bg_color rgb(217, 237, 247);
 @define-color warning_fg_color #FFB74D;
 @define-color warning_bg_color rgb(252, 248, 227);
-@define-color question_fg_color #EF5350;
+@define-color question_fg_color #EF6565;
 @define-color question_bg_color rgb(252, 229, 213);
 @define-color error_fg_color #fff;
-@define-color error_bg_color #EF5350;
+@define-color error_bg_color #EF6565;
 @define-color link_color #7986CB;
 @define-color success_color #00E676;
 @define-color warning_color #FFB74D;
-@define-color error_color #EF5350;
+@define-color error_color #EF6565;
 
 /* widget colors */
 @define-color titlebar_bg_color @dark_bg_color;
@@ -62,7 +63,7 @@ background-image: -gtk-gradient (linear, left top, left bottom,
 @define-color panel_fg_color @dark_fg_color;
 
 /* osd */
-@define-color osd_base @dark_bg_color;
+@define-color osd_base #300a24/* @dark_bg_color*/;
 @define-color osd_fg @dark_fg_color;
 @define-color osd_bg alpha(@osd_base, 0.8);
 
